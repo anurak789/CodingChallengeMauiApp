@@ -1,14 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
-namespace CodingChallengeMauiApp.ViewModes
+namespace CodingChallengeMauiApp.ViewModels
 {
     public class OldPhone
     {
+        /// <summary>
+        /// This method split input string into array and loop throught array of digit
+        /// then convert each digit to letter.
+        /// <example>
+        /// For example:
+        /// <code>
+        /// string input = "222 2 22";
+        /// OldPhonePad(input);
+        /// split items = "222" "2" "22"
+        /// </code>
+        /// results in <c>items</c>'s return result = "CAB".
+        /// </example>
+        /// </summary>
         public string OldPhonePad(string input)
         {
             string result = string.Empty;
@@ -110,7 +118,7 @@ namespace CodingChallengeMauiApp.ViewModes
                             letter = "Z";
                             break;
                         default:
-                            letter = input;
+                            letter = "";
                             break;
                     }
                     result += letter;

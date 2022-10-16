@@ -1,4 +1,4 @@
-using CodingChallengeMauiApp.ViewModes;
+using CodingChallengeMauiApp.ViewModels;
 
 namespace CodingChallengeMauiApp.Views;
 
