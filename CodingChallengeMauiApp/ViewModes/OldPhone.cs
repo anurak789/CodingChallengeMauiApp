@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace CodingChallengeMauiApp.Models
+namespace CodingChallengeMauiApp.ViewModes
 {
     public class OldPhone
     {
