@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CodingChallengeMauiApp.Views.Oldphonepage"
+             Title="Old Phone Pad Converter">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Padding="10"
+                   BorderColor="#570dff"
+                   BackgroundColor="SeaShell"
+                   HasShadow="False"
+                   Margin="2,22,2,0">
+                <Label x:Name="lbScreen" Text="" FontSize="32"/>
+            </Frame>
+            <Label Grid.Row="0" x:Name="lbScreen1"
+                    Text="Your output here"
+                    FontSize="20"
+                    TextColor="#570dff"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    Margin="20,-3,5,0"/>
+        </Grid>
+        <Frame Padding="10"
+               BorderColor="#570dff"
+               HasShadow="False"
+               Margin="2,15,2,0">
+            <Entry x:Name="inputLetter"
+               Placeholder="Please input numbers follow by #"
+               FontSize="22"
+               Keyboard="Telephone"
+               TextChanged="inputLetter_TextChanged"
+               HorizontalOptions="StartAndExpand"
+               PlaceholderColor="Olive"/>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
