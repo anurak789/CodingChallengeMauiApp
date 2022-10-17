@@ -123,12 +123,12 @@ namespace CodingChallengeMauiApp.ViewModels
                     }
                     result += letter;
                 }
-                return result;
             }
             catch (Exception ex)
             {
-                throw;
+                Console.Write(ex.Message);
             }
+            return result;
         }
     }
 }

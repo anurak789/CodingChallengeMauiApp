@@ -18,7 +18,7 @@
                 VerticalOptions="CenterAndExpand"/>
 
             <Button Text="Enter to the system"
-                    BackgroundColor="Crimson"
+                    BackgroundColor="RoyalBlue"
                     Clicked="OnEnterClicked"/>
             <BoxView Color="AliceBlue" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             </BoxView>
